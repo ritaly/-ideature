@@ -1,11 +1,12 @@
 # Ideature
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple app with ideas & picture
 
-Things you may want to cover:
-
-* Ruby version
+| Name |  Version |
+| :--: | :---: |
+| [Ruby](https://www.ruby-lang.org) | 2.4.1 |
+| [Ruby on Rails](http://www.rubyonrails.org/) | 5.2 |
+| [Sqlite3](https://www.sqlite.org/) | - |
 
 * System dependencies
 
