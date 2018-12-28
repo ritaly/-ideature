@@ -1,6 +1,6 @@
 # Ideature
 
-Simple app with ideas & picture
+ App to store ideas & picture
 
 | Name |  Version |
 | :--: | :---: |
