@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <% if @idea.image.attached? %>
+  <div class="col-md">
+    <%= link_to image_tag(@idea.image), ideas_path %>
+  </div>
+  <% end %>
+  <div class="col-md">
+    <h2><%= @idea.title %></h2>
+    <p><%= @idea.caption %></p>
+  </div>
+</div>
+
+<div class='text-center'>
+<%= link_to 'Back', ideas_path %> |
+<%= link_to 'Edit', edit_idea_path(@idea) %> 
+</div>

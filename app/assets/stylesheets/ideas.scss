@@ -1,0 +1,63 @@
+// Place all the styles related to the ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
+$violet: #642B73;
+$amarant: #C6426E;
+$fontcurly: 'Comfortaa', cursive;
+
+a {
+  color: lighten($amarant,10%);
+  
+  &:hover {
+  color: darken($amarant,10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 1em;
+  font-family: $fontcurly;
+  font-weight: bold;
+}
+
+.navbar-dark {
+  background-color: darken($violet,10%);
+}
+.navbar-brand {
+  font-weight: bold;
+  font-family: $fontcurly;
+}
+
+header {
+  min-height: 60vh;
+  background: $violet;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, $amarant, $violet);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, $amarant, $violet); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: white;
+  text-align: center;
+  
+  .tagline {
+    font-size: 1.3em;
+  }
+}
+
+.icon-background {
+    color: darken($violet,10%);
+}
+
+.thumbnail {
+  max-width: 400px;
+  height: 300px;
+  overflow:hidden;
+
+  img {
+    width: 100%;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+}

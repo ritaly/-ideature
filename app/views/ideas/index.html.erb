@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class="text-center">Top ideas</h2>
+
+<div class="row">
+  <% @ideas.each do |idea| %>
+    <div class="col-4">
+      <figure class="figure">
+        <div class='thumbnail'>
+          <%= image_tag idea.image, class: "figure-img img-fluid rounded" %>
+        </div>
+        <br>
+        <figcaption class="figure-caption"><%= idea.caption %></figcaption>
+          <div class='text-right'>
+            <span class="fa-stack">
+              <%= link_to idea do %>
+                <%= icon('fa', 'circle', class: 'fa-stack-2x icon-background') %>
+                <%= icon('fas', 'eye', class: 'fa-stack-1x') %>
+              <% end %>
+            </span>
+            <span class="fa-stack">
+              <%= link_to edit_idea_path(idea) do %>
+                <%= icon('fa', 'circle', class: 'fa-stack-2x icon-background') %>
+                <%= icon('fas', 'pencil-ruler', class: 'fa-stack-1x') %>
+              <% end %>
+            </span>
+            <span class="fa-stack">
+              <%= link_to idea, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <%= icon('fa', 'circle', class: 'fa-stack-2x icon-background') %>
+                <%= icon('fas', 'trash-alt', class: 'fa-stack-1x') %>
+              <% end %>
+            </span>
+          </div>
+      </figure>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'New Idea', new_idea_path %>
