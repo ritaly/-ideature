@@ -8,16 +8,4 @@
 | [Ruby on Rails](http://www.rubyonrails.org/) | 5.2 |
 | [Sqlite3](https://www.sqlite.org/) | - |
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* testing ActiveStorage
